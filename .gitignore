@@ -10,6 +10,7 @@ Thumbs.db
 bin/
 obj/
 out/
+publish/
 
 ## User-specific files
 *.user
