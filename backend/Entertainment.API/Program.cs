@@ -17,7 +17,7 @@ builder.Services.AddDbContext<EntertainmentDbContext>(options =>
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy => {
-        policy.WithOrigins("http://localhost:3000")
+        policy.WithOrigins("https://gray-coast-0b2b27d1e.6.azurestaticapps.net")
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials();
