@@ -20,6 +20,10 @@ const EntertainersPage: React.FC = () => {
     loadEntertainers();
   }, []);
 
+  if (entertainers === null) {
+    return <div className="container mt-4">Loading entertainers...</div>;
+  }
+
   return (
     <div className="container mt-4">
       <h2 className="mb-4">Entertainers</h2>
